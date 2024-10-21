@@ -54,16 +54,16 @@ public class Employees {
         double regularHours = (hoursWorked - overtimeHours);
 
 
-        public String getTotalPay(){
-        return ("Total Pay: " + (payRate * hoursWorked)+ overtimePay);
+        public double getTotalPay(){
+        return (payRate * hoursWorked)+ overtimePay;
 
         }
-        public String getRegularHours(){
-        return ("Regular hours worked this week: " + regularHours);
+        public double getRegularHours(){
+        return  regularHours;
 
         }
-        public String getOvertimeHours(){
-        return ("Overtime hours worked this week: " + overtimeHours);
+        public double getOvertimeHours(){
+        return overtimeHours;
 
         }
 }
